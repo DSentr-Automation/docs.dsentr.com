@@ -1,9 +1,9 @@
 ---
-title: SendGrid Node
+title: SendGrid
 sidebar_position: 1
 ---
 
-# SendGrid Email Node
+# SendGrid
 
 The **SendGrid Email** action node allows your workflow to send emails through [SendGrid](https://sendgrid.com/), a trusted and widely used transactional email platform.  
 With this node, you can send standard emails directly from DSentr or use **dynamic templates** from your SendGrid account for fully customized and branded messages.

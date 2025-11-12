@@ -27,10 +27,24 @@ module.exports = {
               type: 'category',
               label: 'Email Nodes',
               items: [
-                'nodes/action-nodes/sendgrid-node'
+                'nodes/action-nodes/email/sendgrid-node',
+                'nodes/action-nodes/email/mailgun-node',
+                'nodes/action-nodes/email/aws-node'
               ]
-            }
-          ]
+            },
+            {
+              type: 'category',
+              label: 'Messaging Nodes',
+              items: [
+                'nodes/action-nodes/messaging/slack-node',
+                'nodes/action-nodes/messaging/teams-node',
+                'nodes/action-nodes/messaging/google-chat-node'
+              ]
+            },
+            'nodes/action-nodes/productivity/google-sheets-node',
+            'nodes/action-nodes/web/http-request-node',
+            'nodes/action-nodes/utility/run-code'
+          ],
         }
       ],
     },

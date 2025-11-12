@@ -83,6 +83,8 @@ If a shared OAuth connection is disconnected or removed:
 If the personal OAuth connection is disconnected or removed
 - Any workflows belonging to *All* users that relied on this connection will stop functioning.  
 
+Likewise, If a user that has a shared workspace AOuth connection leaves or is removed from the workspace, that users OAuth connection is also removed. workflows belonging to *All* users that relied on this connection will stop functioning until the connection is updated.
+
 ---
 
 ## 6. Best practices
