@@ -27,6 +27,13 @@ Must be a valid HTTP or HTTPS URL.
 
 **Required**
 
+#### Important: Avoid calling Dsentr endpoints from inside your workflow
+
+If you enter a URL that points to a Dsentr domain (such as your own webhook trigger URL), your workflow can trigger itself in a loop. Each loop counts as a separate run and will continue until your workspace run limit or overage charges apply.
+
+Use caution when calling any dsentr.com URL from an HTTP Request node.  
+Only do this intentionally and with guards such as conditions or rate limiting.
+
 ---
 
 ### HTTP Method  

@@ -72,6 +72,11 @@ HMAC ensures requests cannot be spoofed or tampered with, even if your URL is in
 
 Keep your webhook URL private. Rotate the token immediately if it may have been exposed.
 
+### Avoid self-trigger loops
+
+If you use an HTTP Request node to call your own webhook URL, the workflow will trigger itself repeatedly. Each loop counts as a new run and will continue until your workspace run limit or overage kicks in.
+
+Use caution when calling any dsentr.com URL from inside a workflow. Add rate limits, conditions, or external guards if you intentionally build feedback loops.
 
 ### Enabling HMAC signatures (Workspace Plan only)
 
