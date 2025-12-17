@@ -91,6 +91,7 @@ module.exports = {
       label: 'Workflow Authentication',
       items: ['auth/api', 'auth/oauth'],
     },
+    'support/support',
     {
       type: 'category',
       label: 'Legal',
